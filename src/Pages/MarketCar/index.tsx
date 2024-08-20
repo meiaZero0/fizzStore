@@ -11,6 +11,11 @@ interface IProduct {
   valor: number;
 }
 
+interface IShoppingItem {
+    produto: IProduct;
+    quantidade: number;
+}
+
 
 const MarketCarPages = () => {
     const [products, setProducts] = useState<IProduct[]>([]);
