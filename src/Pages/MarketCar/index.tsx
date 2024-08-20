@@ -3,6 +3,15 @@ import React, { useState, useEffect } from "react";
 import './MarketCarStyle.css';
 import axios from 'axios';
 
+
+interface IProduct {
+  id: number;
+  imagem: string;
+  titulo: string;
+  valor: number;
+}
+
+
 const MarketCarPages = () => {
     const [products, setProducts] = useState<IProduct[]>([]);
     const [category, setCategory] = useState('sneakers');
